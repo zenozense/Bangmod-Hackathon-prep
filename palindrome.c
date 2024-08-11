@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
 void reversedString(char* str){
     int start = 0;
@@ -10,10 +11,10 @@ void reversedString(char* str){
         temp = str[start];
         str[start] = str[end];
         str[end] = temp;
-        
+
         start++;
         end--;
-    } 
+    }
 }
 
 bool isPalindrome(int x) {
